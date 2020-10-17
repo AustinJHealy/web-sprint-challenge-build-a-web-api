@@ -61,10 +61,24 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
-1. Understand and explain the use of Middleware?
-1. The basic principles of the REST architectural style.
-1. Understand and explain the use of Express Routers.
-1. Describe tooling used to manually test the correctness of an API.
+
+Node is built to be lightweight and scalable by making use of middleware, having agreed upon standards and keeping things simple.  Node uses a single threaded model with event looping which lets the server respond in a non-blocking or asynchronous way as compared to other traditional servers which use multiple threads to handle requests. This enables fast and efficient communication. One of the most important features of Express is that it allows for the use of middleware. Another core feature of Express is routing with Express Router which is a way to select which request handler function to use based on the url. Convenience helpers are another core feature and they provide functionality that makes writing web apps and API's easier ex: response.status().
+
+2. Understand and explain the use of Middleware?
+
+Middleware is basically any functions that let us extend the functionality of our software. In React, middleware allowed us to intercept the processes of our program and make asynchronous changes or operations and continue executing the script. There are three types of middleware for Express: built-in middleware that comes with express but needs to be configured with server.use() in order to use it, third party middleware like CORS that can be installed with NPM and imported with require, and custom middleware that we can create ourselves. Express Middleware is compatible with Connect which is a framework that provides just the middleware layer. Connect is efficient and has been around for a long time so it can provide middleware that is sometimes unavailable with Express Middleware. 
+
+3. The basic principles of the REST architectural style.
+
+The basic principles of the REST architectural style are statelessness, a uniform interface and event driven CRUD operations and middleware that are the tools we use to create, read, update, delete and manipulate our data.
+
+4. Understand and explain the use of Express Routers.
+
+Express Routers are like the Express version of react-router in React. They are individual instances of groups of middleware and routing functions that perform actions on an object based on the url and HTTP method used. They can handle requests and manage responses depending on what they're being used for.
+
+5. Describe tooling used to manually test the correctness of an API.
+
+Software like Insomnia or Postman is designed to make it easy for a developer to test an API they are creating. Instead of having to actually write the code the user can just select the desired type of their HTTP request, add data to the body, add form data, headers, and view the response all without using the browser or executing code.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 

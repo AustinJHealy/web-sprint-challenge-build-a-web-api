@@ -1,0 +1,6 @@
+#Dependency Dirs
+node_modules
+/node_modules
+
+#dotenv
+.env
